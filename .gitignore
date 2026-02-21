@@ -1,0 +1,13 @@
+# Personal data (generated at runtime)
+config.json
+*.db
+daemon.log
+
+# Personal tools (not shared)
+tools/personal/
+
+# Build artifacts
+polymarket-*-daemon
+node_modules/
+bun.lock
+*.DS_Store

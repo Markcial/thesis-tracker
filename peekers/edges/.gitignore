@@ -1,0 +1,11 @@
+# Personal data
+config.json
+edges.db
+daemon.log
+
+# Build artifacts
+polymarket-edges-daemon
+node_modules/
+
+# Bun
+bun.lock

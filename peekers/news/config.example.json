@@ -1,0 +1,22 @@
+{
+  "feeds": [
+    {
+      "name": "Reuters World",
+      "url": "https://www.reutersagency.com/feed/?best-regions=world&post_type=best",
+      "category": "world"
+    },
+    {
+      "name": "Reuters Politics",
+      "url": "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
+      "category": "politics"
+    },
+    {
+      "name": "AP News",
+      "url": "https://rsshub.app/apnews/topics/apf-topnews",
+      "category": "general"
+    }
+  ],
+  "refreshIntervalMinutes": 15,
+  "maxHeadlinesPerFeed": 50,
+  "retentionDays": 7
+}

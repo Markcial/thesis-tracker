@@ -1,0 +1,11 @@
+# Personal data
+config.json
+news.db
+daemon.log
+
+# Build artifacts
+polymarket-news-daemon
+node_modules/
+
+# Bun
+bun.lock

@@ -1,0 +1,11 @@
+{
+  "portfolio": {
+    "wallet": "0xYOUR_POLYMARKET_WALLET_ADDRESS",
+    "syncIntervalMinutes": 60
+  },
+  "storage": {
+    "maxSizeBytes": 52428800,
+    "maxWatchedMarkets": 200,
+    "maxPriceHistoryDays": 7
+  }
+}

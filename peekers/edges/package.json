@@ -1,0 +1,15 @@
+{
+  "name": "polymarket-edges-daemon",
+  "version": "1.0.0",
+  "description": "Background daemon for tracking Polymarket edges and price history",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile polymarket-edges-daemon",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0"
+  }
+}
