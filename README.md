@@ -1,10 +1,21 @@
-# Thesis Tracker
+<div align="center">
 
-Find mispriced prediction markets through cognitive bias analysis.
+# 🔮 Thesis Tracker
 
-## Philosophy
+**Find mispriced prediction markets through cognitive bias analysis.**
 
-```
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-000000?logo=bun&logoColor=white)
+![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-D97757?logo=claude&logoColor=white)
+![Polymarket](https://img.shields.io/badge/Polymarket-Gamma%20API-2E5CFF)
+<!-- TODO(Marc): the README says MIT but the repo has no LICENSE file. Add one, then add:
+[![License](https://img.shields.io/github/license/Markcial/thesis-tracker)](LICENSE) -->
+
+</div>
+
+## 🧠 Philosophy
+
+```text
 I find facts. YOU develop the thesis.
 
 Facts don't make things happen - you interpret what they mean.
@@ -13,9 +24,22 @@ The bet is yours. The thesis is yours. The risk is yours.
 
 This is not an arbitrage bot. It surfaces cognitive biases, news sentiment, and market anomalies. You develop the thesis about what those signals mean.
 
-## What's Inside
+> [!WARNING]
+> Nothing here is financial advice. Prediction markets involve real money and real risk, and every decision is yours.
+<!-- TODO(Marc): suggested disclaimer, not in the original README. Keep, reword or delete. -->
 
-```
+## ✨ What it does
+
+- 🎯 **Mispriced bets**: markets where cognitive biases create clear mispricings.
+- 🎟️ **Cheap lottery tickets**: longshots where current reality suggests better odds than priced.
+- 💼 **Portfolio tracking**: monitor positions and P&L, and get hedge/exit advice. Holdings come from the Data API; the CLOB API is for placing trades.
+- 📰 **Peekers**: two background daemons that collect market data and news headlines locally, checked before any external API.
+- 🧭 **Mentor**: detects your stage and guides you from setup through reflection.
+- 🚦 **Traffic lights**: every signal ends as GREEN, YELLOW or RED.
+
+## 📦 What's inside
+
+```text
 thesis-tracker/
 ├── skill/                    # Claude Code skill
 │   ├── SKILL.md              # Main skill documentation
@@ -33,17 +57,17 @@ thesis-tracker/
     └── personal/             # Your tools (gitignored)
 ```
 
-## Prerequisites
+## 🧰 Prerequisites
 
-- [Bun](https://bun.sh) runtime
-- [Claude Code](https://claude.ai/code) with skills support
-- A Polymarket wallet address
+- 🥟 [Bun](https://bun.sh) runtime
+- 🤖 [Claude Code](https://claude.ai/code) with skills support
+- 👛 A Polymarket wallet address
 
-## Installation
+## ⚙️ Installation
 
 ```bash
 # Clone
-git clone https://github.com/markcial/thesis-tracker.git
+git clone https://github.com/Markcial/thesis-tracker.git
 cd thesis-tracker
 
 # Install the skill
@@ -66,7 +90,7 @@ cd ~/.claude/polymarket-edges && bun run build
 cd ~/.claude/polymarket-news && bun run build
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 1. **Initialize** (first time):
    ```bash
@@ -79,12 +103,12 @@ cd ~/.claude/polymarket-news && bun run build
    cd ~/.claude/polymarket-edges && ./polymarket-edges-daemon &
    ```
 
-3. **Use the skill**:
-   ```
+3. **Use the skill** in Claude Code:
+   ```text
    /polymarket-edge-scanner
    ```
 
-## Tools
+## 🛠️ Tools
 
 From `~/.claude/thesis-tracker-tools`:
 
@@ -96,27 +120,40 @@ From `~/.claude/thesis-tracker-tools`:
 
 All support `--json` for structured output.
 
-### Personal Tools
+### 🧩 Personal Tools
 
 Add your own tools to `tools/personal/` - they won't be committed to git.
 
-## Stages
+## 🗺️ Stages
 
-1. **Setup** - Config and daemons
-2. **Learning** - Find first edge together
-3. **Active** - Skin in the game
-4. **Reflection** - Review resolved positions
+| | Stage | What happens |
+|---|---|---|
+| 1️⃣ | **Setup** | Config and daemons |
+| 2️⃣ | **Learning** | Find first edge together |
+| 3️⃣ | **Active** | Skin in the game |
+| 4️⃣ | **Reflection** | Review resolved positions |
 
-## Traffic Lights
+## 🚦 Traffic Lights
 
-- **GREEN** - Edge found, take position
-- **YELLOW** - Watch, wait for confirmation
-- **RED** - No edge or thesis drifted
+| Light | Meaning |
+|---|---|
+| 🟢 **GREEN** | Edge found, take position |
+| 🟡 **YELLOW** | Watch, wait for confirmation |
+| 🔴 **RED** | No edge, pass |
 
-## Contributing
+## 🤝 Contributing
 
 See `skill/SKILL.md` section "Developer Intern: Maintaining Tools" for tool development guidelines.
 
-## License
+## 📄 License
 
 MIT
+<!-- TODO(Marc): add the LICENSE file so GitHub detects it. -->
+
+---
+
+<div align="center">
+
+Made by **Marc Garcia** · [marcgarcia.dev](https://marcgarcia.dev) · [@_marc_garcia on X](https://x.com/_marc_garcia) · [GitHub](https://github.com/Markcial)
+
+</div>
